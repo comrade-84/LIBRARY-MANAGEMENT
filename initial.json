@@ -1,0 +1,86 @@
+[
+    {
+      "Title": "To Kill a Mockingbird",
+      "Author": "Harper Lee",
+      "Genre": "Fiction",
+      "Availability": "Available",
+      "CoverImage": "https://covers.openlibrary.org/b/id/10301303-L.jpg"
+    },
+    {
+      "Title": "1984",
+      "Author": "George Orwell",
+      "Genre": "Dystopian Fiction",
+      "Availability": "Available",
+      "CoverImage": "https://covers.openlibrary.org/b/id/7222246-L.jpg"
+    },
+    {
+      "Title": "The Great Gatsby",
+      "Author": "F. Scott Fitzgerald",
+      "Genre": "Fiction",
+      "Availability": "Available",
+      "CoverImage": "https://covers.openlibrary.org/b/id/10517866-L.jpg"
+    },
+    {
+      "Title": "Pride and Prejudice",
+      "Author": "Jane Austen",
+      "Genre": "Romance",
+      "Availability": "Available",
+      "CoverImage": "https://covers.openlibrary.org/b/id/10517409-L.jpg"
+    },
+    {
+      "Title": "The Catcher in the Rye",
+      "Author": "J.D. Salinger",
+      "Genre": "Fiction",
+      "Availability": "Available",
+      "CoverImage": "https://covers.openlibrary.org/b/id/10464909-L.jpg"
+    },
+    {
+      "Title": "Lord of the Rings",
+      "Author": "J.R.R. Tolkien",
+      "Genre": "Fantasy",
+      "Availability": "Available",
+      "CoverImage": "https://covers.openlibrary.org/b/id/9160808-L.jpg"
+    },
+    {
+      "Title": "The Hobbit",
+      "Author": "J.R.R. Tolkien",
+      "Genre": "Fantasy",
+      "Availability": "Available",
+      "CoverImage": "https://covers.openlibrary.org/b/id/10287024-L.jpg"
+    },
+    {
+      "Title": "Fahrenheit 451",
+      "Author": "Ray Bradbury",
+      "Genre": "Dystopian Fiction",
+      "Availability": "Available",
+      "CoverImage": "https://covers.openlibrary.org/b/id/10465122-L.jpg"
+    },
+    {
+      "Title": "Jane Eyre",
+      "Author": "Charlotte Brontë",
+      "Genre": "Romance",
+      "Availability": "Available",
+      "CoverImage": "https://covers.openlibrary.org/b/id/10316997-L.jpg"
+    },
+    {
+      "Title": "Animal Farm",
+      "Author": "George Orwell",
+      "Genre": "Political Satire",
+      "Availability": "Available",
+      "CoverImage": "https://covers.openlibrary.org/b/id/10301307-L.jpg"
+    },
+    {
+      "Title": "The Alchemist",
+      "Author": "Paulo Coelho",
+      "Genre": "Fiction",
+      "Availability": "Available",
+      "CoverImage": "https://covers.openlibrary.org/b/id/8637639-L.jpg"
+    },
+    {
+      "Title": "Brave New World",
+      "Author": "Aldous Huxley",
+      "Genre": "Dystopian Fiction",
+      "Availability": "Available",
+      "CoverImage": "https://covers.openlibrary.org/b/id/10316994-L.jpg"
+    }
+  ]
