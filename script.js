@@ -562,7 +562,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
             const filteredItems = fetchedData.filter(item =>
                 (item.Title?.toLowerCase().includes(searchTerm) || '') ||
-                (item.Author?.toLowerCase().includes(searchTerm) || '')
+                (item.Author?.toLowerCase().includes(searchTerm) || '') || (item.genre.toLowerCase().includes(searchTerm) || '')
             );
             if (homeItems) homeItems.innerHTML = '';
             if (filteredItems.length > 0) {
@@ -925,7 +925,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     if (searchInput) {
         searchInput.addEventListener('keypress', (event) => {
-            if (event.key === 'Enter') handleSearch();
+            if (event.key) handleSearch();
         });
     }
 

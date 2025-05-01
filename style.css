@@ -13,6 +13,7 @@ html {
 .search {
     display: flex;
     gap: 10px;
+    margin-left: 40px;
 }
 .searchInput {
     padding: 5px;
@@ -164,7 +165,7 @@ html {
 
 
 /* Existing styles */
-#borrowed-books {
+/* #borrowed-books {
     display: none;
 }
 #borrowed-books.show {
@@ -188,7 +189,7 @@ html {
     font-size: 2rem;
     font-weight: 600;
 }
-/* New styles for admin actions */
+New styles for admin actions */
 #admin-actions .card {
     cursor: pointer;
 }
@@ -228,4 +229,11 @@ html {
 .modal-body table th, .modal-body table td {
     padding: 0.75rem;
     vertical-align: middle;
+}
+
+@media screen and (max-width:500px) {
+    .search{
+        margin-left: 0;
+        flex-direction: column;
+    }
 }
