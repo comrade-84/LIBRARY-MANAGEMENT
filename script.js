@@ -498,7 +498,7 @@ labelHome.addEventListener('click', () =>{
             bookItem.classList.add('admin-book-item');
             bookItem.innerHTML = `
                 <div>
-                    <strong>${book.Title}</strong> by ${book.Author || 'Unknown'} (${book.Genre})
+                   <img height="30" src="${book.CoverImage}"> <strong>${book.Title}</strong> by ${book.Author || 'Unknown'} (${book.Genre})
                     <br>Status: ${book.Availability}
                 </div>
                 <div>
@@ -964,7 +964,14 @@ labelHome.addEventListener('click', () =>{
             const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
             if (loggedInUser && loggedInUser.role !== 'admin') {
                 loadBorrowedBooks(loggedInUser.email);
-                renderBorrowedBooks();
+                if (borrowedBooks.length === 0) {
+                    document.getElementById('confirmModalMessage').textContent = "no books available here";
+                    confirmModal.show();
+                }
+                else{
+                     renderBorrowedBooks();
+                }
+               
             } else {
                 document.getElementById('confirmModalMessage').textContent = "Please log in as a user to view borrowed books.";
                 confirmModal.show();
