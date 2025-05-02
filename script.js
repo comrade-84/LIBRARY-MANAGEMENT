@@ -1,6 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     // DOM Elements
+    const labelHome = document.querySelector('.label');
     const logInSection = document.querySelector(".login-container");
     const signUpSection = document.querySelector(".signup-container");
     const userDashboard = document.querySelector(".user-dashboard");
@@ -35,6 +36,33 @@ document.addEventListener("DOMContentLoaded", () => {
     const heroSection = document.querySelector('.hero-section');
     const welcomeMessages = document.querySelectorAll('#welcomeMessage');
     const loaderOverlay = document.querySelector('#loaderOverlay');
+    const darkTheme = document.querySelector('.moon');
+    const lightTheme = document.querySelector('.sun');
+
+   
+       
+labelHome.addEventListener('click', () =>{
+    location.reload();
+})
+
+    darkTheme.addEventListener('click', function () {
+        userDashboard.classList.add('darkmode');
+        adminDashboard.classList.add('darkmode');
+        bodyEl.classList.add('darkmode');
+        lightTheme.classList.remove('hidden');
+        darkTheme.classList.add('hidden');
+        // homeItems.classList.add('darkmode');
+        // Optional: Apply dark mode to the entire body
+    });
+        
+            lightTheme.addEventListener('click', function () {
+                userDashboard.classList.remove('darkmode');
+                adminDashboard.classList.remove('darkmode');
+                bodyEl.classList.remove('darkmode');
+                lightTheme.classList.add('hidden');
+                darkTheme.classList.remove('hidden');
+            })
+        
 
     // Modal Elements
     const manageUsersModal = new bootstrap.Modal(document.getElementById('manageUsersModal'));
@@ -795,7 +823,7 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
             const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
             if (loggedInUser) {
-                document.getElementById('checkBorrowerMessage').textContent = `Name: ${loggedInUser.name}\nEmail: ${loggedInUser.email}\nRole: ${loggedInUser.role}`;
+                document.getElementById('checkBorrowerMessage').innerHTML = `Name: ${loggedInUser.name} <br> Email: ${loggedInUser.email} <br> Role: ${loggedInUser.role}`;
                 document.getElementById('checkBorrowerModalLabel').textContent = 'User Profile';
                 checkBorrowerModal.show();
             } else {

@@ -4,6 +4,17 @@ body {
 html {
     scroll-behavior: smooth;
 }
+.themes{
+    height: 20px;
+    margin-top: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.darkmode{
+    background-color: #111111 !important;
+    color: #fcfafa;
+}
+
 .navbar {
     background-color: #2c3e50;
 }
